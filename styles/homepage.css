@@ -1,0 +1,32 @@
+/* OpenEd Homepage Styles */
+/* Expands and overrides opened.css */
+/* by White Whale Web Services */
+
+#clip { width:100%; overflow-x:hidden; min-width:968px; }
+
+#header { height:340px; padding:15px; }
+	h1 { float:left; }
+	#navigation { float:left; padding:50px 0 0 80px; margin-left:40px; background:url(/images/homepage/nav_arrows.gif) no-repeat scroll 0 50px; }
+		#navigation li { font-size:1.6em; margin-bottom:0; line-height:2em; }
+
+#copyleft { padding:0 15px; height:50px; }
+	#license { width:357px; padding-right:100px; float:right; position:relative; }
+		#license img { float:none; position:absolute; top:0; right:0; } 
+		#license p { clear:none; padding:0; }
+		
+/* News & Features strip */
+#content { float:none; padding:0; width:100%; position:relative; height:360px; overflow:hidden; margin:0; border:none; }
+	#mask_left,#mask_right { width:1000px; height:370px; position:absolute; background-color:#fff; opacity:.7; z-index:200; }
+	#mask_left { left:-1001px; }
+	#mask_right { right:-1001px; }
+	#scroll_navigation { width:40px; position:absolute; top:-25px; right:5px; }
+		#scroll_left,#scroll_right { background-image:url(/images/homepage/scroll_arrows.gif); height:20px; width:20px; float:left; }
+		#scroll_left { background-position:0 0; }
+		#scroll_left:hover { background-position:0 -20px; }
+		#scroll_left.active { background-position:0 -40px; }
+		#scroll_right { background-position:-20px 0; }
+		#scroll_right:hover { background-position:-20px -20px; }
+		#scroll_right.active { background-position:-20px -40px; }
+		
+#slider { width:1936px; height:360px; overflow:hidden; position:absolute; top:0; left:-484px; }
+	#slider li { float:left; margin-right:2px; }
