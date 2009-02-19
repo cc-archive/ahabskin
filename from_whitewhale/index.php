@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 	<title>Open Ed at Creative Commons</title>
-	<link href="/styles/opened.css" rel="stylesheet"/>
-	<link href="/styles/homepage.css" rel="stylesheet"/>
-	<script type="text/javascript" src="/scripts/beforeload.js"></script>
+	<link href="styles/opened.css" rel="stylesheet"/>
+	<link href="styles/homepage.css" rel="stylesheet"/>
+	<script type="text/javascript" src="scripts/beforeload.js"></script>
 </head>
 <body>
 <a href="#content" class="skiplink">Skip to content</a>
@@ -13,7 +13,7 @@
 	<div id="container">
 		<div id="frame">
 			<div id="header">
-				<h1><a href="/"><img src="/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
+				<h1><a href="/"><img src="images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
 				<form id="search" action="/search/" method="get">
 					<label for="search_query" id="search_title">Search Open Ed</label>
 					<input name="q" id="search_query" type="text"/><input type="submit" id="search_submit" value="Go"/>
@@ -37,9 +37,9 @@
 					<?php include 'content.slider.php'; ?>
 			</div>
 			<div id="copyleft">
-				<a id="cclearn" href="http://learn.creativecommons.org"><img src="/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
+				<a id="cclearn" href="http://learn.creativecommons.org"><img src="images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
 				<div id="license">
-					<img src="/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
+					<img src="images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
 					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
 				</div>
 			</div>
@@ -53,8 +53,8 @@
 </div>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/scripts/jquery-ui-effects.core-1.6rc6.min.js"></script>
-<script type="text/javascript" src="/scripts/opened.js"></script>
-<script type="text/javascript" src="/scripts/homepage.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-effects.core-1.6rc6.min.js"></script>
+<script type="text/javascript" src="scripts/opened.js"></script>
+<script type="text/javascript" src="scripts/homepage.js"></script>
 </body>
 </html>
