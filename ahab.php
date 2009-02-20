@@ -56,6 +56,7 @@ class AhabTemplate extends QuickTemplate {
 		?>xmlns:<?php echo "{$tag}=\"{$ns}\" ";
 	} ?>xml:lang="<?php $this->text('lang') ?>" lang="<?php $this->text('lang') ?>" dir="<?php $this->text('dir') ?>">
 	<head>
+		<meta http-equiv="Content-Type" content="<?php $this->text('mimetype') ?>; charset=<?php $this->text('charset') ?>" />
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
 <?php	if($this->data['jsvarurl']) { ?>
