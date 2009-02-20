@@ -63,7 +63,7 @@ class AhabTemplate extends QuickTemplate {
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 		/*]]>*/</style>
 		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('printcss') ?>?<?php echo $GLOBALS['wgStyleVersion'] ?>" />
-		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<meta http-equiv="imagetoolbar" content="no" />
 		
 		<?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
                 
