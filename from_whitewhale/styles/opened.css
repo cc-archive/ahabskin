@@ -14,7 +14,7 @@ ul { list-style-type:none; }
 /* Page structure */
 body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica,sans-serif; font-size:0.875em; line-height:1.3; }
 #container { width:968px; margin:0 auto; }
-#frame { position:relative; border:1px solid #ccc; margin:1em 0 0.3em 0; background:url(/images/common/bg_cclearn_mark.gif) no-repeat 480px -20px; }
+#frame { position:relative; border:1px solid #ccc; margin:1em 0 0.3em 0; background:url(../images/common/bg_cclearn_mark.gif) no-repeat 480px -20px; }
 
 #search { position:absolute; top:0; right:0; padding:5px 5px 10px 10px; }
 	#search_title { font-weight:bold; display:block; margin-bottom:0.2em; }
@@ -23,7 +23,7 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	#search_sources { margin:0.5em 0.5em 0; display:none; }
 	#search_sources li { margin:0.2em 0 0; }
 		#search_sources li label { padding-left:0.3em; }
-#search.open { background:#bbb url(/images/common/bg_searchbox.gif); -webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.6); -moz-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.6); }
+#search.open { background:#bbb url(../images/common/bg_searchbox.gif); -webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.6); -moz-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.6); }
 	#search.open #search_title,#search.open #search_submit { visibility:visible; }
 	#search.open #search_sources { display:block; }
 	
@@ -52,8 +52,8 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	#footer a:hover { color:#CE0D0D;}
 
 /* Feature panels */
-.panel { width:220px; padding:0 10px; height:360px; overflow:hidden; background:#c6c6c6 url(/images/homepage/backgrounds/bg_gray_gradient.gif) repeat-x; }
-.panel.alternate { background:#cabeae url(/images/homepage/backgrounds/bg_tan_gradient.gif) repeat-x; }
+.panel { width:220px; padding:0 10px; height:360px; overflow:hidden; background:#c6c6c6 url(../images/homepage/backgrounds/bg_gray_gradient.gif) repeat-x; }
+.panel.alternate { background:#cabeae url(../images/homepage/backgrounds/bg_tan_gradient.gif) repeat-x; }
 .panel.with_image { background-position:0 150px; }
 	.panel h2 { font-size:0.9em; font-weight:bold; background-color:#6c6c6c; font-family:"Helvetica Neue", Helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:0.06em; padding:2px 5px 3px 10px; margin:0 -10px 10px; }
 	.panel.alternate h2 { background-color:#959595; }
