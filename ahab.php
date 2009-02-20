@@ -62,6 +62,11 @@ class AhabTemplate extends QuickTemplate {
 		<style type="text/css" media="screen, projection">/*<![CDATA[*/
 			@import "<?php $this->text('stylepath') ?>/styles/ahab/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 		/*]]>*/</style>
+		<?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
+                
+		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
+
+		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
 <?php	if($this->data['jsvarurl']) { ?>
