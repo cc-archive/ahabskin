@@ -58,6 +58,7 @@ class AhabTemplate extends QuickTemplate {
 	<head>
 		<meta http-equiv="Content-Type" content="<?php $this->text('mimetype') ?>; charset=<?php $this->text('charset') ?>" />
 		<?php $this->html('headlinks') ?>
+		<title><?php $this->text('pagetitle') ?></title>
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
 <?php	if($this->data['jsvarurl']) { ?>
