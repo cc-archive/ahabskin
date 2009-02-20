@@ -60,7 +60,7 @@ class AhabTemplate extends QuickTemplate {
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
 		<style type="text/css" media="screen, projection">/*<![CDATA[*/
-			@import "<?php $this->text('stylepath') ?>/styles/ahab/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
+			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 		/*]]>*/</style>
 		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('printcss') ?>?<?php echo $GLOBALS['wgStyleVersion'] ?>" />
 		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
