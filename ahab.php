@@ -59,6 +59,9 @@ class AhabTemplate extends QuickTemplate {
 		<meta http-equiv="Content-Type" content="<?php $this->text('mimetype') ?>; charset=<?php $this->text('charset') ?>" />
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "<?php $this->text('stylepath') ?>/styles/ahab/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
+		/*]]>*/</style>
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
 <?php	if($this->data['jsvarurl']) { ?>
