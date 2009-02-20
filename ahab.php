@@ -128,7 +128,7 @@ class AhabTemplate extends QuickTemplate {
 
 			<div class="panel with_image">
 				<h2 class="purple">Projects</h2>
-				<img src="/images/homepage/strip/cambodia.jpg" alt="Faculty of a Cambodian public school" width="240" height="140"/>
+				<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/homepage/strip/cambodia.jpg" alt="Faculty of a Cambodian public school" width="240" height="140"/>
 				<h3>Open Education in Cambodia</h3>
 				<p>Cambodia has become the first country in the world to teach only Free and Open Source application in its public schools. <a class="more_link" href="#">More &raquo;</a></p>
 			</div>
