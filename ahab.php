@@ -106,10 +106,10 @@ class AhabTemplate extends QuickTemplate {
 					<label for="search_query" id="search_title">Search Open Ed</label>
 					<input name="q" id="search_query" type="text"/><input type="submit" id="search_submit" value="Go"/>
 					<ul id="search_sources">
-						<li><input type="checkbox" id="search_oer" checked="checked"/><label for="search_oer">Open ed (DiscoverED)</label>
-						<li><input type="checkbox" id="search_odepo" checked="checked"/><label for="search_odepo">Organizations (ODEPO)</label>
-						<li><input type="checkbox" id="search_community" checked="checked"/><label for="search_community">Community resources</label>
-						<li><input type="checkbox" id="search_site" checked="checked"/><label for="search_site">This site</label>
+						<li><input type="checkbox" id="search_oer" checked="checked"/><label for="search_oer">Open ed (DiscoverED)</label></li>
+						<li><input type="checkbox" id="search_odepo" checked="checked"/><label for="search_odepo">Organizations (ODEPO)</label></li>
+						<li><input type="checkbox" id="search_community" checked="checked"/><label for="search_community">Community resources</label></li>
+						<li><input type="checkbox" id="search_site" checked="checked"/><label for="search_site">This site</label></li>
 					</ul>
 				</form>
 				<ul id="navigation">
