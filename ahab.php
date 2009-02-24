@@ -112,22 +112,13 @@ class AhabTemplate extends QuickTemplate {
 						<li><input type="checkbox" id="search_site" checked="checked"/><label for="search_site">This site</label></li>
 					</ul>
 				</form>
-				<ul id="navigation">
-					<li><a href="/about/">What is Open Education?</a></li>	
-					<li><a href="/teachers/">For Teachers</a></li>
-					<li><a href="/learners/">For Learners</a></li>
-					<li><a href="/community/">The Open Ed Community</a></li>
-					<li><a href="/license/">License Your Work</a></li>
-					<li><a href="/getinvolved/">Get Involved</a></li>
-				</ul>
 <?php 
 		$sidebar = $this->data['sidebar'];		
 		if ( !isset( $sidebar['SEARCH'] ) ) $sidebar['SEARCH'] = true;
 		if ( !isset( $sidebar['TOOLBOX'] ) ) $sidebar['TOOLBOX'] = true;
 		if ( !isset( $sidebar['LANGUAGES'] ) ) $sidebar['LANGUAGES'] = true;
 		foreach ($sidebar as $boxName => $cont) {
-			if ( $boxName == 'SEARCH' ) {
-				$this->searchBox();
+			if ( $boxName == 'SEARCH' ) { /* skip search */
 			} elseif ( $boxName == 'TOOLBOX' ) {
 				$this->toolbox();
 			} elseif ( $boxName == 'LANGUAGES' ) {
@@ -302,8 +293,8 @@ class AhabTemplate extends QuickTemplate {
 	function customBox( $bar, $cont ) {
 ?>
 	<div class='generated-sidebar portlet' id='p-<?php echo Sanitizer::escapeId($bar) ?>'<?php echo $this->skin->tooltip('p-'.$bar) ?>>
-		<h5><?php $out = wfMsg( $bar ); if (wfEmptyMsg($bar, $out)) echo $bar; else echo $out; ?></h5>
 		<div class='pBody'>
+		<h5><?php $out = wfMsg( $bar ); if (wfEmptyMsg($bar, $out)) echo $bar; else echo $out; ?></h5>
 <?php   if ( is_array( $cont ) ) { ?>
 			<ul>
 <?php 			foreach($cont as $key => $val) { ?>
