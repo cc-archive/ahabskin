@@ -120,6 +120,24 @@ class AhabTemplate extends QuickTemplate {
 					<li><a href="/license/">License Your Work</a></li>
 					<li><a href="/getinvolved/">Get Involved</a></li>
 				</ul>
+<?php 
+		$sidebar = $this->data['sidebar'];		
+		if ( !isset( $sidebar['SEARCH'] ) ) $sidebar['SEARCH'] = true;
+		if ( !isset( $sidebar['TOOLBOX'] ) ) $sidebar['TOOLBOX'] = true;
+		if ( !isset( $sidebar['LANGUAGES'] ) ) $sidebar['LANGUAGES'] = true;
+		foreach ($sidebar as $boxName => $cont) {
+			if ( $boxName == 'SEARCH' ) {
+				$this->searchBox();
+			} elseif ( $boxName == 'TOOLBOX' ) {
+				$this->toolbox();
+			} elseif ( $boxName == 'LANGUAGES' ) {
+				$this->languageBox();
+			} else {
+				$this->customBox( $boxName, $cont );
+			}
+		}
+?>
+
 			</div>
 
 <!-- end header -->
