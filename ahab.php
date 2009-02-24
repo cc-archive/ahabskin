@@ -187,16 +187,7 @@ class AhabTemplate extends QuickTemplate {
 	</div>
 
 </div>
-
-			<div id="copyleft">
-				<a href="http://learn.creativecommons.org" id="cclearn"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
-				<div id="license">
-					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
-					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
-				</div>
-			</div>
-
-
+<?php $this->copyleft(); ?>
 		</div>
 <!-- end sidebar -->
 
@@ -334,6 +325,18 @@ class AhabTemplate extends QuickTemplate {
 <?php
 		}
 	}
+
+   function copyleft() {
+?>			<div id="copyleft">
+				<a href="http://learn.creativecommons.org" id="cclearn"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
+				<div id="license">
+					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
+					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
+				</div>
+			</div>
+
+<?php
+   }
 
 	/*************************************************************************************************/
 	function customBox( $bar, $cont ) {
