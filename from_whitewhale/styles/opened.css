@@ -28,10 +28,10 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	#search.open #search_sources { display:block; }
 	
 			
-#p-navigation ul  { margin:15px 0 20px; }
-	#p-navigation li { margin-bottom:0.8em; font-size:1.2em; letter-spacing:0.05em; }
-		#p-navigation a { text-decoration:none; color:#333; }
-		#p-navigation a:hover { color:#666; }
+.portlet ul  { margin:15px 0 20px; }
+	.portlet li { margin-bottom:0.8em; font-size:1.2em; letter-spacing:0.05em; }
+		.portlet a { text-decoration:none; color:#333; }
+		.portlet a:hover { color:#666; }
 
 #copyleft { margin-top:30px; }
 	#cclearn { display:block; float:left; width:92px; padding:4px 0; }
