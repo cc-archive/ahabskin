@@ -140,21 +140,15 @@ class AhabTemplate extends QuickTemplate {
 				<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/homepage/strip/cambodia.jpg" alt="Faculty of a Cambodian public school" width="240" height="140"/>
 				<h3>Open Education in Cambodia</h3>
 				<p>Cambodia has become the first country in the world to teach only Free and Open Source application in its public schools. <a class="more_link" href="#">More &raquo;</a></p>
-			</div>
+			</div> <!-- end image panel -->
 
-<!-- end image panel -->
-
-<!-- extra header -->
-
-<div>
-
+<!-- extra sidebar junk --> <div id="extra_sidebar_junk">
 <?php $this->views(); ?>
 <?php $this->personaltools(); ?>
+</div> <!-- end extra header -->
 
-</div>
 <?php $this->copyleft(); ?>
-		</div>
-<!-- end sidebar -->
+		</div> <!-- end sidebar -->
 
 <!-- content -->
 
