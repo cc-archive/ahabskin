@@ -302,7 +302,7 @@ class AhabTemplate extends QuickTemplate {
 			<ul>
 <?php 			foreach($this->data['personal_urls'] as $key => $item) { ?>
 				<li id="pt-<?php echo Sanitizer::escapeId($key) ?>"<?php
-					if ($item['active']) { ?> class="active"<?php } ?><a href="<?php
+					if ($item['active']) { ?> class="active"<?php } ?>><a href="<?php
 				echo htmlspecialchars($item['href']) ?>"<?php echo $this->skin->tooltipAndAccesskey('pt-'.$key) ?><?php
 				if(!empty($item['class'])) { ?> class="<?php
 				echo htmlspecialchars($item['class']) ?>"<?php } ?>><?php
