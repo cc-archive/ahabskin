@@ -95,7 +95,15 @@ class AhabTemplate extends QuickTemplate {
 <a href="#content" class="skiplink">Skip to content</a>
 
 <div id="container">
+   <div id="toplinks">
+   <?php $this->views(); ?>
+   <?php $this->personaltools(); ?>
+   </div>
+    
+
+   </div>
 	<div id="frame">
+
 
 		<div id="sidebar">
    <!-- sidebar -->
@@ -141,11 +149,6 @@ class AhabTemplate extends QuickTemplate {
 				<h3>Open Education in Cambodia</h3>
 				<p>Cambodia has become the first country in the world to teach only Free and Open Source application in its public schools. <a class="more_link" href="#">More &raquo;</a></p>
 			</div> <!-- end image panel -->
-
-<!-- extra sidebar junk --> <div id="extra_sidebar_junk">
-<?php $this->views(); ?>
-<?php $this->personaltools(); ?>
-</div> <!-- end extra header -->
 
 <?php $this->copyleft(); ?>
 		</div> <!-- end sidebar -->
@@ -316,7 +319,7 @@ class AhabTemplate extends QuickTemplate {
    function views() {
 ?>
 
-			<ul class="portlet">
+			<ul class="views">
 	<?php		foreach($this->data['content_actions'] as $key => $tab) {
 					echo '
 				 <li id="ca-' . Sanitizer::escapeId($key).'"';
