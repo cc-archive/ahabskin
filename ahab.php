@@ -210,7 +210,6 @@ class AhabTemplate extends QuickTemplate {
 	function toolbox() {
 ?>
 	<div class="portlet" id="p-tb">
-		<h5><?php $this->msg('toolbox') ?></h5>
 		<div class="pBody">
 			<ul>
 <?php
@@ -299,7 +298,6 @@ class AhabTemplate extends QuickTemplate {
 
    function personaltools() {
 ?>
-		<h5><?php $this->msg('personaltools') ?></h5>
 		<div class="pBody">
 			<ul>
 <?php 			foreach($this->data['personal_urls'] as $key => $item) { ?>
@@ -318,7 +316,6 @@ class AhabTemplate extends QuickTemplate {
    function views() {
 ?>
 
-                        <h5>Views</h5>
 			<ul class="portlet">
 	<?php		foreach($this->data['content_actions'] as $key => $tab) {
 					echo '
@@ -351,7 +348,6 @@ class AhabTemplate extends QuickTemplate {
 ?>
 	<div class='generated-sidebar portlet' id='p-<?php echo Sanitizer::escapeId($bar) ?>'<?php echo $this->skin->tooltip('p-'.$bar) ?>>
 		<div class='pBody'>
-		<h5><?php $out = wfMsg( $bar ); if (wfEmptyMsg($bar, $out)) echo $bar; else echo $out; ?></h5>
 <?php   if ( is_array( $cont ) ) { ?>
 			<ul>
 <?php 			foreach($cont as $key => $val) { ?>
