@@ -99,9 +99,6 @@ class AhabTemplate extends QuickTemplate {
    <?php $this->views(); ?>
    <?php $this->personaltools(); ?>
    </div>
-    
-
-   </div>
 	<div id="frame">
 
 
