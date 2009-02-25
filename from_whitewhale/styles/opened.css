@@ -14,7 +14,7 @@ ul { list-style-type:none; }
 /* Page structure */
 body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica,sans-serif; font-size:0.875em; line-height:1.3; }
 #container { width:968px; margin:0 auto; }
-#frame { position:relative; border:1px solid #ccc; margin:1em 0 0.3em 0; background:url(../images/common/bg_cclearn_mark.gif) no-repeat 480px -20px; }
+#frame { position:relative; border:1px solid #ccc; margin:0 0 0.3em 0; background:url(../images/common/bg_cclearn_mark.gif) no-repeat 480px -20px; }
 
 #search { position:absolute; top:0; right:0; padding:5px 5px 10px 10px; }
 	#search_title { font-weight:bold; display:block; margin-bottom:0.2em; }
@@ -103,3 +103,37 @@ p#intro:first-line {color:#000;}
 .three.columns .second { width:200px; padding:0 15px; }
 .three.columns .third { width:200px; padding-left:15px; }
 .second.column {margin-top:40px;}
+
+
+/* Nav */
+#toplinks { 
+	overflow: auto; 
+	padding: 5px;
+	background-color: #e8e8e8;
+	text-align: right;
+}
+#toplinks ul {
+	font-size: 90%;
+	padding-right: 5px;
+}
+/*
+#toplinks ul, #toplinks div { float: left; }
+*/
+#toplinks div.toolbox { float: right; clear: both; padding-top: 3px;}
+#toplinks div.pBody { display: inline; float: right;} 
+#toplinks ul.views { float: right;}
+
+#toplinks ul li {
+	display: inline; 
+	padding-right: 5px;
+	margin-right: 3px;
+	border-right: 1px solid #fff;
+}
+
+#toplinks a {
+	color: #444;
+}
+#toplinks a:hover {
+	color: #888;
+}
+
