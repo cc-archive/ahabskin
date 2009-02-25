@@ -154,7 +154,7 @@ class AhabTemplate extends QuickTemplate {
 <!-- content -->
 
 		<div id="content">
-			<h2><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/headers/theopenedcommunity.gif" alt="The Open Ed Community" width="646" height="57" /></h2>
+		<h1 class="firstHeading"><?php $this->data['displaytitle']!=""?$this->html('title'):$this->text('title') ?></h1>
 
 		 <?php $this->html('bodytext') ?>
 		</div>
