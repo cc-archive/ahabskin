@@ -210,7 +210,7 @@ class AhabTemplate extends QuickTemplate {
 	/*************************************************************************************************/
 	function toolbox() {
 ?>
-	<div class="portlet" id="p-tb">
+	<div class="toolbox" id="p-tb">
 		<div class="pBody">
 			<ul>
 <?php
