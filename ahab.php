@@ -98,6 +98,7 @@ class AhabTemplate extends QuickTemplate {
    <div id="toplinks">
    <?php $this->views(); ?>
    <?php $this->personaltools(); ?>
+   <?php $this->toolbox(); ?>
    </div>
 	<div id="frame">
 
@@ -125,7 +126,7 @@ class AhabTemplate extends QuickTemplate {
 		foreach ($sidebar as $boxName => $cont) {
 			if ( $boxName == 'SEARCH' ) { /* skip search */
 			} elseif ( $boxName == 'TOOLBOX' ) {
-				$this->toolbox();
+			  /* skip toolbox */
 			} elseif ( $boxName == 'LANGUAGES' ) {
 				$this->languageBox();
 			} else {
