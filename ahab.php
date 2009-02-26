@@ -191,11 +191,27 @@ class AhabTemplate extends QuickTemplate {
 
 	/*************************************************************************************************/
 	function formattedTitle() {
+	  /* MonoBook's title formatting code adds a call to htmlspecialchars()
+	   * in the case that we are not using a displaytitle.
+	   *
+	   * I don't know why that is, so I preserve it here.
+	   */
+	  $title_data = $this->data['title'];
+	  $pieces = explode(" ", $title_data, 2);
+	  $first_word = $pieces[0];
+	  $rest_words = $pieces[1];
+
 	  if ($this->data['displaytitle']) {
-	    echo $this->data['title'];
+	    /* Don't change the words. */
 	  } else {
-	    echo htmlspecialchars($this->data['title']);
+	    $first_word = htmlspecialchars($first_word);
+	    $rest_words = htmlspecialchars($rest_words);
 	  }
+
+	  /* Finally, add HTML and echo. */
+	  echo ('<span class="titleFirstWord">' .
+		$first_word . '</span>' .
+		' ' . $rest_words);
 	}
 
 	function searchBox() {
