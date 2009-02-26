@@ -78,6 +78,10 @@ h1.firstHeading {
 	margin-top:-2px;
 }
 
+.titleFirstWord {
+    color: red;
+}
+
 h2,h3,h4,h5 { font-family:Georgia,serif; font-weight:normal; }
 h3,h4,h5 { margin-bottom:14px; line-height:1.15em;}
 h2 { font-size:3em; }
