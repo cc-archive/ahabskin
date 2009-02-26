@@ -110,7 +110,7 @@ class AhabTemplate extends QuickTemplate {
 				<h1><a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
 				<form id="searchbox" action="<?php $this->text('searchaction') ?>" method="get">
 					<label for="searchbox_query" id="searchbox_title">Search Open Ed</label>
-					<input name="q" id="searchbox_query" type="text"/><input type="submit" id="searchbox_submit" value="Go"/>
+					<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
 					<ul id="searchbox_sources">
 						<li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
 						<li><input type="checkbox" id="searchbox_odepo" checked="checked"/><label for="searchbox_odepo">Organizations (ODEPO)</label></li>
