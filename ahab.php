@@ -108,14 +108,14 @@ class AhabTemplate extends QuickTemplate {
    <!-- header -->
 			<div id="header">
 				<h1><a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
-				<form id="search" action="/search/" method="get">
-					<label for="search_query" id="search_title">Search Open Ed</label>
-					<input name="q" id="search_query" type="text"/><input type="submit" id="search_submit" value="Go"/>
-					<ul id="search_sources">
-						<li><input type="checkbox" id="search_oer" checked="checked"/><label for="search_oer">Open ed (DiscoverED)</label></li>
-						<li><input type="checkbox" id="search_odepo" checked="checked"/><label for="search_odepo">Organizations (ODEPO)</label></li>
-						<li><input type="checkbox" id="search_community" checked="checked"/><label for="search_community">Community resources</label></li>
-						<li><input type="checkbox" id="search_site" checked="checked"/><label for="search_site">This site</label></li>
+				<form id="searchbox" action="/search/" method="get">
+					<label for="searchbox_query" id="searchbox_title">Search Open Ed</label>
+					<input name="q" id="searchbox_query" type="text"/><input type="submit" id="searchbox_submit" value="Go"/>
+					<ul id="searchbox_sources">
+						<li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
+						<li><input type="checkbox" id="searchbox_odepo" checked="checked"/><label for="searchbox_odepo">Organizations (ODEPO)</label></li>
+						<li><input type="checkbox" id="searchbox_community" checked="checked"/><label for="searchbox_community">Community resources</label></li>
+						<li><input type="checkbox" id="searchbox_site" checked="checked"/><label for="searchbox_site">This site</label></li>
 					</ul>
 				</form>
 <?php 
