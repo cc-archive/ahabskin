@@ -197,21 +197,24 @@ class AhabTemplate extends QuickTemplate {
 	   * I don't know why that is, so I preserve it here.
 	   */
 	  $title_data = $this->data['title'];
-	  $pieces = explode(" ", $title_data, 2);
+	  $pieces = preg_split('/([\W])/', $title_data, 2,
+			       PREG_SPLIT_DELIM_CAPTURE);
 	  $first_word = $pieces[0];
-	  $rest_words = $pieces[1];
+	  $delim      = $pieces[1];
+	  $rest_words = $pieces[2];
 
 	  if ($this->data['displaytitle']) {
 	    /* Don't change the words. */
 	  } else {
 	    $first_word = htmlspecialchars($first_word);
+	    $delim      = htmlspecialchars($delim);
 	    $rest_words = htmlspecialchars($rest_words);
 	  }
 
 	  /* Finally, add HTML and echo. */
 	  echo ('<span class="titleFirstWord">' .
 		$first_word . '</span>' .
-		' ' . $rest_words);
+		$delim . $rest_words);
 	}
 
 	function searchBox() {
