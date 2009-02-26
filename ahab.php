@@ -191,7 +191,11 @@ class AhabTemplate extends QuickTemplate {
 
 	/*************************************************************************************************/
 	function formattedTitle() {
-	  $orig_string = $this->data['displaytitle']!=""?$this->html('title'):$this->text('title');
+	  if ($this->data['displaytitle']) {
+	    $this->html('title');
+	  } else {
+	    $this->text('title');
+	  }
 	}
 
 	function searchBox() {
