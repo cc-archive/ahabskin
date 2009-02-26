@@ -154,7 +154,7 @@ class AhabTemplate extends QuickTemplate {
 <!-- content -->
 
 		<div id="content">
-		<h1 class="firstHeading"><?php $this->data['displaytitle']!=""?$this->html('title'):$this->text('title') ?></h1>
+		    <h1 class="firstHeading"><?php $this->formattedTitle(); ?></h1>
 
 		 <?php $this->html('bodytext') ?>
 		</div>
@@ -190,6 +190,10 @@ class AhabTemplate extends QuickTemplate {
 	} // end of execute() method
 
 	/*************************************************************************************************/
+	function formattedTitle() {
+	  $orig_string = $this->data['displaytitle']!=""?$this->html('title'):$this->text('title');
+	}
+
 	function searchBox() {
 ?>
 	<div id="p-search" class="portlet">
