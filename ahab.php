@@ -98,7 +98,7 @@ class AhabTemplate extends QuickTemplate {
    <div id="toplinks">
    <?php $this->views(); ?>
    <?php $this->personaltools(); ?>
-   <?php $this->toolbox(); ?>
+   <?php if ($this->data['loggedin']) { $this->toolbox(); } ?>
    </div>
 	<div id="frame">
 
