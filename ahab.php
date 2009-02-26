@@ -192,9 +192,9 @@ class AhabTemplate extends QuickTemplate {
 	/*************************************************************************************************/
 	function formattedTitle() {
 	  if ($this->data['displaytitle']) {
-	    $this->html('title');
+	    echo $this->data['title'];
 	  } else {
-	    $this->text('title');
+	    echo htmlspecialchars($this->data['title']);
 	  }
 	}
 
