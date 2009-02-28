@@ -24,7 +24,11 @@ class SkinAhab extends SkinTemplate {
 		SkinTemplate::initPage( $out );
 		$this->skinname  = 'ahab';
 		$this->stylename = 'ahab';
-		$this->template  = 'AhabTemplate';
+		if ($out->mPagetitle == 'Main Page') {
+		  $this->template = 'AhabFrontPageTemplate';
+		} else {
+		  $this->template  = 'AhabTemplate';
+		}
 	}
 }
 
