@@ -456,7 +456,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			<div id="copyleft">
 				<a id="cclearn" href="http://learn.creativecommons.org"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
 				<div id="license">
-					<img src="images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
+					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
 					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
 				</div>
 			</div>
