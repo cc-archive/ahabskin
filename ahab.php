@@ -404,7 +404,7 @@ class AhabTemplate extends QuickTemplate {
 class AhabFrontPageTemplate extends AhabTemplate {
 	function execute() {
 		global $wgRequest;
-		$this->skin = $skin = $this->data['sk1in'];
+		$this->skin = $skin = $this->data['skin'];
 		$action = $wgRequest->getText('action');
 		
 		// Suppress warnings to prevent notices about missing
