@@ -431,16 +431,6 @@ class AhabFrontPageTemplate extends AhabTemplate {
 		<div id="frame">
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
-				<form id="search" action="/search/" method="get">
-					<label for="search_query" id="search_title">Search Open Ed</label>
-					<input name="q" id="search_query" type="text"/><input type="submit" id="search_submit" value="Go"/>
-					<ul id="search_sources">
-						<li><input type="checkbox" id="search_oer" checked="checked"/><label for="search_oer">Open ed (DiscoverED)</label>
-						<li><input type="checkbox" id="search_odepo" checked="checked"/><label for="search_odepo">Organizations (ODEPO)</label>
-						<li><input type="checkbox" id="search_community" checked="checked"/><label for="search_community">Community resources</label>
-						<li><input type="checkbox" id="search_site" checked="checked"/><label for="search_site">This site</label>
-					</ul>
-				</form>
 				<ul id="navigation">
 					<li><a href="/about/">What is Open Education?</a></li>	
 					<li><a href="/teachers/">For Teachers</a></li>
