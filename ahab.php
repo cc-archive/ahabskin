@@ -421,7 +421,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/homepage.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 		/*]]>*/</style>
-	<script type="text/javascript" src="scripts/beforeload.js"></script>
+		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
 </head>
 <body>
 <a href="#content" class="skiplink">Skip to content</a>
