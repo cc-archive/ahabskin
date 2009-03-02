@@ -12,7 +12,7 @@
 	<div id="frame">
 		<div id="sidebar">
 			<div id="header">
-				<h1><a href="/"><img src="/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
+				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
 				<form id="search" action="/search/" method="get">
 					<label for="search_query">Search</label>
 					<input name="q" id="search_query" type="text"/>
@@ -34,9 +34,9 @@
 				<p>The <a href="#">University of Michigan Chemical Engineering Department</a> integrates the practice of knowledge into class curriculum. <a class="more_link" href="#">More &raquo;</a></p>
 			</div>
 			<div id="copyleft">
-				<a href="http://learn.creativecommons.org" id="cclearn"><img src="/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
+				<a href="http://learn.creativecommons.org" id="cclearn"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
 				<div id="license">
-					<img src="/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
+					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
 					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
 				</div>
 			</div>
