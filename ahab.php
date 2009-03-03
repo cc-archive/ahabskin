@@ -376,10 +376,10 @@ class AhabTemplate extends QuickTemplate {
    }
 
 	/*************************************************************************************************/
-	function customBox( $bar, $cont ) {
+   function customBox( $bar, $cont, $outer_class = 'generated-sidebar portlet', $inner_class = 'pBody' ) {
 ?>
-	<div class='generated-sidebar portlet' id='p-<?php echo Sanitizer::escapeId($bar) ?>'<?php echo $this->skin->tooltip('p-'.$bar) ?>>
-		<div class='pBody'>
+	<div class='<?php echo $outer_class ?>' id='p-<?php echo Sanitizer::escapeId($bar) ?>'<?php echo $this->skin->tooltip('p-'.$bar) ?>>
+		<div class='<?php echo $inner_class ?>'>
 <?php   if ( is_array( $cont ) ) { ?>
 			<ul>
 <?php 			foreach($cont as $key => $val) { ?>
@@ -431,14 +431,22 @@ class AhabFrontPageTemplate extends AhabTemplate {
 		<div id="frame">
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
-				<ul id="navigation">
-					<li><a href="/about/">What is Open Education?</a></li>	
-					<li><a href="/teachers/">For Teachers</a></li>
-					<li><a href="/learners/">For Learners</a></li>
-					<li><a href="/community/">For the Open Ed Community</a></li>
-					<li><a href="/license/">License Your Work</a></li>
-					<li><a href="/getinvolved/">Get Involved</a></li>
-				</ul>
+<?php
+		$sidebar = $this->data['sidebar'];		
+		if ( !isset( $sidebar['SEARCH'] ) ) $sidebar['SEARCH'] = true;
+		if ( !isset( $sidebar['TOOLBOX'] ) ) $sidebar['TOOLBOX'] = true;
+		if ( !isset( $sidebar['LANGUAGES'] ) ) $sidebar['LANGUAGES'] = true;
+		foreach ($sidebar as $boxName => $cont) {
+			if ( $boxName == 'SEARCH' ) { /* skip search */
+			} elseif ( $boxName == 'TOOLBOX' ) {
+			  /* skip toolbox */
+			} elseif ( $boxName == 'LANGUAGES' ) {
+				$this->languageBox();
+			} else {
+			  $this->customBox( $boxName, $cont, '', 'navigation' );
+			}
+		}
+?>
 			</div>
 			<div id="content">
 					<?php include 'from_whitewhale/content.slider.php'; ?>

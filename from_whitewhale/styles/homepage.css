@@ -6,8 +6,8 @@
 
 #header { height:340px; padding:15px; }
 	h1 { float:left; }
-	#navigation { float:left; padding:50px 0 0 80px; margin-left:40px; background:url(/images/homepage/nav_arrows.gif) no-repeat scroll 0 50px; }
-		#navigation li { font-size:1.6em; margin-bottom:0; line-height:2em; }
+	.navigation { float:left; padding:50px 0 0 80px; margin-left:40px; background:url(/images/homepage/nav_arrows.gif) no-repeat scroll 0 50px; }
+		.navigation li { font-size:1.6em; margin-bottom:0; line-height:2em; }
 
 #copyleft { padding:0 15px; height:50px; }
 	#license { width:357px; padding-right:100px; float:right; position:relative; }
