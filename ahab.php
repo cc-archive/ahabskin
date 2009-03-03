@@ -172,7 +172,7 @@ class AhabTemplate extends QuickTemplate {
 
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/scripts/opened.js"></script>
+<script type="text/javascript" src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/scripts/opened.js"></script>
 <?php $this->html('bottomscripts'); /* JS call to runBodyOnloadHook */ ?>
 <?php $this->html('reporttime') ?>
 <?php if ( $this->data['debug'] ): ?>
