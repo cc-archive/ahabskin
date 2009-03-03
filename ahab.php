@@ -174,7 +174,7 @@ class AhabTemplate extends QuickTemplate {
 <!-- footer -->
 
 	<ul id="footer">
-		<li id="home"><a href="/">The Open Education Project <span>at</span> Creative Commons</a></li>
+		<li id="home"><a href="/">Hosted by ccLearn</a></li>
 		<li id="contact"><a href="#">Contact Us</a></li>
 	</ul>
 </div>
