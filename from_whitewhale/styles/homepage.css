@@ -6,7 +6,7 @@
 
 #header { height:340px; padding:15px; }
 	h1 { float:left; }
-	.navigation { float:left; padding:50px 0 0 80px; margin-left:40px; background:url(/images/homepage/nav_arrows.gif) no-repeat scroll 0 50px; }
+	.navigation { float:left; padding:50px 0 0 80px; margin-left:40px; background:url(../images/homepage/nav_arrows.gif) no-repeat scroll 0 50px; }
 		.navigation li { font-size:1.6em; margin-bottom:0; line-height:2em; }
 
 #copyleft { padding:0 15px; height:50px; }
@@ -20,7 +20,7 @@
 	#mask_left { left:-1001px; }
 	#mask_right { right:-1001px; }
 	#scroll_navigation { width:40px; position:absolute; top:-25px; right:5px; }
-		#scroll_left,#scroll_right { background-image:url(/images/homepage/scroll_arrows.gif); height:20px; width:20px; float:left; }
+		#scroll_left,#scroll_right { background-image:url(../images/homepage/scroll_arrows.gif); height:20px; width:20px; float:left; }
 		#scroll_left { background-position:0 0; }
 		#scroll_left:hover { background-position:0 -20px; }
 		#scroll_left.active { background-position:0 -40px; }
