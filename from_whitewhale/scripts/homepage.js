@@ -3,7 +3,7 @@
 
 $(function() { // on DOM ready
 	// Nav hover
-	var nav = $('#navigation');
+	var nav = $('#p-navigation');
 	nav.find('li').hover(function() {
 		nav.css('background-position','0 '+($(this).position().top-30)+'px')
 	}, function() {
