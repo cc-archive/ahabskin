@@ -5,7 +5,7 @@ $(function() { // on DOM ready
 	// Nav hover
 	var nav = $('#p-navigation');
 	nav.find('li').hover(function() {
-		nav.css('background-position','0 '+($(this).position().top-30)+'px')
+		nav.css('background-position','0 '+($(this).position().top-15)+'px')
 	}, function() {
 		nav.css('background-position','0 50px')
 	});
