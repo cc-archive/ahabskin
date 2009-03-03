@@ -468,9 +468,9 @@ class AhabFrontPageTemplate extends AhabTemplate {
 </div>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ui-effects.core-1.6rc6.min.js"></script>
-<script type="text/javascript" src="scripts/opened.js"></script>
-<script type="text/javascript" src="scripts/homepage.js"></script>
+<script type="text/javascript" src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/scripts/jquery-ui-effects.core-1.6rc6.min.js"></script>
+<script type="text/javascript" src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/scripts/opened.js"></script>
+<script type="text/javascript" src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/scripts/homepage.js"></script>
 </body>
 </html><?php
 
