@@ -332,7 +332,7 @@ class AhabTemplate extends QuickTemplate {
 				<a href="http://learn.creativecommons.org" id="cclearn"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
 				<div id="license">
 					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
-					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
+					<p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
 				</div>
 			</div>
 
@@ -463,13 +463,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			<div id="content">
 					<?php include 'from_whitewhale/content.slider.php'; ?>
 			</div>
-			<div id="copyleft">
-				<a id="cclearn" href="http://learn.creativecommons.org"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
-				<div id="license">
-					<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/license_cc_by.gif" alt="Creative Commons BY License" width="88" height="31"/>
-					<p>Except where otherwise noted, content on this site is licensed under a <a href="#">Creative Commons Attribution 3.0 License</a>.</p>
-				</div>
-			</div>
+			<?php $this->copyleft(); ?>
 		</div>
 	<div>
 			    <?php $this->footer(); ?>
