@@ -172,11 +172,8 @@ class AhabTemplate extends QuickTemplate {
 <!-- end frame -->
 
 <!-- footer -->
+<?php $this->footer(); ?>
 
-	<ul id="footer">
-		<li id="home"><a href="/">Hosted by ccLearn</a></li>
-		<li id="contact"><a href="#">Contact Us</a></li>
-	</ul>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="/scripts/opened.js"></script>
@@ -192,6 +189,15 @@ class AhabTemplate extends QuickTemplate {
 <?php
 	wfRestoreWarnings();
 	} // end of execute() method
+
+	function footer() {
+?>
+	<ul id="footer">
+		<li id="home"><a href="/">Hosted by ccLearn</a></li>
+		<li id="contact"><a href="#">Contact Us</a></li>
+	</ul>
+	    <?php }
+	  
 
 	/*************************************************************************************************/
 	function formattedTitle() {
@@ -459,11 +465,8 @@ class AhabFrontPageTemplate extends AhabTemplate {
 				</div>
 			</div>
 		</div>
-	<div id="footer">
-		<ul>
-	        <li id="home"><a href="/">The Open Education Project <span>at</span> Creative Commons</a></li>
-	        <li id="contact"><a href="#">Contact Us</a></li>
-		</ul>
+	<div>
+			    <?php $this->footer(); ?>
 	</div>
 </div>
 </div>
