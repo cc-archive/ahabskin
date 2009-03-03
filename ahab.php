@@ -99,11 +99,7 @@ class AhabTemplate extends QuickTemplate {
 <a href="#content" class="skiplink">Skip to content</a>
 
 <div id="container">
-   <div id="toplinks">
-   <?php $this->views(); ?>
-   <?php $this->personaltools(); ?>
-   <?php if ($this->data['loggedin']) { $this->toolbox(); } ?>
-   </div>
+   <?php $this->topbox(); ?>
 	<div id="frame">
 
 
@@ -197,6 +193,15 @@ class AhabTemplate extends QuickTemplate {
 		<li id="contact"><a href="#">Contact Us</a></li>
 	</ul>
 	    <?php }
+
+	function topbox() {
+?>
+   <div id="toplinks">
+   <?php $this->views(); ?>
+   <?php $this->personaltools(); ?>
+   <?php if ($this->data['loggedin']) { $this->toolbox(); } ?>
+   </div>
+       <?php }
 	  
 
 	/*************************************************************************************************/
@@ -434,6 +439,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 <a href="#content" class="skiplink">Skip to content</a>
 <div id="clip">
 	<div id="container">
+			   <?php $this->topbox(); ?>
 		<div id="frame">
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="157"/></a></h1>
