@@ -189,8 +189,8 @@ class AhabTemplate extends QuickTemplate {
 	function footer() {
 ?>
 	<ul id="footer">
-		<li id="home"><a href="/">Hosted by ccLearn</a></li>
-		<li id="contact"><a href="#">Contact Us</a></li>
+		<li id="home"><a href="http://learn.creativecommons.org/">Hosted by ccLearn</a></li>
+		<li id="contact"><a href="http://learn.creativecommons.org/contact">Contact Us</a></li>
 	</ul>
 	    <?php }
 
