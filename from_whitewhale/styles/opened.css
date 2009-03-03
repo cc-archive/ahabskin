@@ -46,8 +46,8 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 
 #footer { font-size:0.9em; }
 	#footer #home { float:left; }
-		#footer #home span { text-transform:lowercase; font-style:italic; }
-	#footer #contact { float:right; text-transform:lowercase;}
+		#footer #home span { font-style:italic; }
+	#footer #contact { float:right;}
 	#footer a { color:#333; text-decoration:none; }
 	#footer a:hover { color:#CE0D0D;}
 

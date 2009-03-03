@@ -190,7 +190,7 @@ class AhabTemplate extends QuickTemplate {
 ?>
 	<ul id="footer">
 		<li id="home"><a href="http://learn.creativecommons.org/">Hosted by ccLearn</a></li>
-		<li id="contact"><a href="http://learn.creativecommons.org/contact">Contact Us</a></li>
+		<li id="contact"><a href="http://learn.creativecommons.org/contact">Contact us</a></li>
 	</ul>
 	    <?php }
 
