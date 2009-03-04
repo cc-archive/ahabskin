@@ -2,9 +2,9 @@
 /* by White Whale Web Services */
 
 $(function() { // on DOM ready
-	var search = $('#search'),
-		body = $('body');
-	search.find('#search_query')
+	var search = $('#searchbox');
+    var body = $('body');
+	search.find('#searchInput')
 		.inlineLabel('Search') // then add inline search label
 		.focus(function() { // when focusing
 			search.addClass('open'); // open the panel
