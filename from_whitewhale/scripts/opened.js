@@ -7,7 +7,7 @@ $(function() { // on DOM ready
 	search.find('#searchInput')
 		.inlineLabel('Search') // then add inline search label
 		.focus(function() { // when focusing
-			search.addClass('open'); // open the panel
+			/* Don't open the panel yet. search.addClass('open'); // open the panel */
 			body.click(function(e) { // if the body is clicked
 				if(!$(e.target).parents('#search').length) { // if the clicked element is in the search box, return
 					$('body').unbind('click'); // unbind the body click
