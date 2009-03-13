@@ -3,7 +3,9 @@
 
 /* Reset browser defaults  */
 html { font-size:100%; }
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,pre,img,form,fieldset,legend,label,iframe { margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,pre,img,form,fieldset,legend,label,iframe { margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+/* table,th,td are untouched */
+
 input,select,textarea,button { font-size:1em; line-height:inherit; font-family:inherit; color:#222; margin:0; }
 input[type=button],input[type=submit],button { overflow:visible; }
 input[disabled],select[disabled],textarea[disabled],button[disabled] { opacity:0.75; }
