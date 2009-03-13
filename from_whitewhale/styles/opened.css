@@ -7,7 +7,10 @@ body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,pre,img,form,fieldset,leg
 input,select,textarea,button { font-size:1em; line-height:inherit; font-family:inherit; color:#222; margin:0; }
 input[type=button],input[type=submit],button { overflow:visible; }
 input[disabled],select[disabled],textarea[disabled],button[disabled] { opacity:0.75; }
-ul { list-style-type:none; }
+.toplinks ul { list-style-type:none; }
+#searchbox_sources ul { list-style-type:none; }
+#header ul { list-style-type:none; }
+
 .skiplink { position:absolute; top:0; left:-9999px; width:9em; padding:5px; color:#00f; background-color:#ff9; border:1px solid #993; text-align:center; z-index:9999; }
 .skiplink:focus { left:0; }
 
@@ -39,12 +42,13 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 		#license img { float:right; }
 		#license p { clear:both; padding-top:0.5em; margin-bottom:0; }
 
-#sidebar { width:220px; padding:15px 5px 15px 15px; border-right:1px solid #ccc; float:left; }
+#sidebar { width:220px; padding:15px 5px 15px 15px; border-right:1px solid #ccc; float:left;}
+
 	#sidebar .panel { margin:0 -15px; }
 	
 #content { float:left; width:663px; padding:72px 30px 30px 30px; margin-left:-1px; border-left:1px solid #ccc; }
 
-#footer { font-size:0.9em; }
+#footer { font-size:0.9em; list-style-type: none; }
 	#footer #home { float:left; }
 		#footer #home span { font-style:italic; }
 	#footer #contact { float:right;}
