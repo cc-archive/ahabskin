@@ -360,6 +360,7 @@ class AhabTemplate extends QuickTemplate {
 ?>
 
 			<ul class="views">
+rofl
 	<?php		foreach($this->data['content_actions'] as $key => $tab) {
 					echo '
 				 <li id="ca-' . Sanitizer::escapeId($key).'"';
