@@ -3,15 +3,17 @@
 
 /* Reset browser defaults  */
 html { font-size:100%; }
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,pre,img,form,fieldset,legend,label,iframe { margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+body,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,pre,img,form,fieldset,legend,label,iframe { margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+
 /* table,th,td are untouched */
+/* ul, ol, li, dl, dt, dd are untouched */
 
 input,select,textarea,button { font-size:1em; line-height:inherit; font-family:inherit; color:#222; margin:0; }
 input[type=button],input[type=submit],button { overflow:visible; }
 input[disabled],select[disabled],textarea[disabled],button[disabled] { opacity:0.75; }
-.toplinks ul { list-style-type:none; }
-#searchbox_sources ul { list-style-type:none; }
-#header ul { list-style-type:none; }
+.toplinks ul { list-style-type:none; margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+#searchbox_sources ul { list-style-type:none; margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
+#header ul { list-style-type:none; margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
 
 .skiplink { position:absolute; top:0; left:-9999px; width:9em; padding:5px; color:#00f; background-color:#ff9; border:1px solid #993; text-align:center; z-index:9999; }
 .skiplink:focus { left:0; }
@@ -33,7 +35,7 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	#searchbox.open #searchbox_sources { display:block; }
 	
 			
-.portlet ul  { margin:15px 0 20px; }
+.portlet ul  { margin: 0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; margin:15px 0 20px; }
 	.portlet li { margin-bottom:0.8em; font-size:1.2em; letter-spacing:0.05em; }
 		.portlet a { text-decoration:none; color:#333; }
 		.portlet a:hover { color:#666; }
@@ -68,7 +70,7 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	.panel.with_image h3 { font-size:1.4em; line-height:1.3em; }
 	.panel .more_link { font-weight:bold; }
 	.panel p { margin-bottom:0.5em; }
-	.panel ul li { margin-bottom:0.3em; list-style-type:disc; margin-left:1em; }
+	.panel ul li { margin: 0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; margin-bottom:0.3em; list-style-type:disc; margin-left:1em; }
 	.panel.with_image img { margin:0 -10px; }
 /* Specific panel background colors */
 	.panel h2.purple { background-color:#66669a; }
@@ -131,17 +133,19 @@ p#intro:first-line {color:#000;}
 	text-align: right;
 }
 #toplinks ul {
+    margin:0; padding:0; line-height:inherit; font-weight:inherit; border:none; 
 	font-size: 90%;
 	padding-right: 5px;
 }
 /*
-#toplinks ul, #toplinks div { float: left; }
+#toplinks ul, #toplinks div { float: left;     margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; }
 */
 #toplinks div.toolbox { float: right; clear: both; padding-top: 3px;}
 #toplinks div.pBody { display: inline; float: right;} 
-#toplinks ul.views { float: right;}
+#toplinks ul.views {     margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none; float: right;}
 
 #toplinks ul li {
+    margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; border:none;
 	display: inline; 
 	padding-right: 5px;
 	margin-right: 3px;
