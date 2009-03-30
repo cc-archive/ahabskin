@@ -112,6 +112,11 @@ a:hover { color:#37a; }
 p#intro { font-family:Georgia,serif; font-size:1.6em; line-height:1.1em;color:#444; margin:0 40px 40px 60px;}
 p#intro:first-line {color:#000;}
 
+/* Lists */
+#content ul {
+	margin-left: 1em;
+}
+
 /* Column layouts */
 .columns { margin:0 auto 20px; padding-top:10px; }
 .column { float:left; overflow:hidden;}
@@ -122,7 +127,16 @@ p#intro:first-line {color:#000;}
 .three.columns .third { width:200px; padding-left:15px; }
 .second.column {margin-top:40px;}
 
-
+.printfooter {
+	display: block;
+	clear: both;
+	color: #888;
+	font-size: 90%;
+	padding-top: 20px;
+}
+.printfooter a {
+	color: #666;
+}
 /* Nav */
 #toplinks { 
 	overflow: auto; 

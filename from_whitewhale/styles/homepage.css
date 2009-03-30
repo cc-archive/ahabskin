@@ -20,7 +20,7 @@
 	#mask_left,#mask_right { width:1000px; height:370px; position:absolute; background-color:#fff; opacity:.7; z-index:200; }
 	#mask_left { left:-1001px; }
 	#mask_right { right:-1001px; }
-	#scroll_navigation { width:40px; position:absolute; top:-25px; right:5px; }
+	#scroll_navigation { width:40px; position:absolute; top:-5px; right:5px; }
 		#scroll_left,#scroll_right { background-image:url(../images/homepage/scroll_arrows.gif); height:20px; width:20px; float:left; }
 		#scroll_left { background-position:0 0; }
 		#scroll_left:hover { background-position:0 -20px; }
@@ -29,5 +29,5 @@
 		#scroll_right:hover { background-position:-20px -20px; }
 		#scroll_right.active { background-position:-20px -40px; }
 		
-#slider { width:1936px; height:360px; overflow:hidden; position:absolute; top:0; left:-484px; }
+#slider { width:1936px; height:360px; overflow:hidden; position:absolute; top:20px; left:-484px; margin-left: 0 !important;}
 	#slider li { float:left; margin-right:2px; }
