@@ -84,6 +84,11 @@ h1.firstHeading {
 	margin-top:-2px;
 }
 
+.tleft, .floatleft { float: left; margin-right: 15px; }
+.tright, .floatright { float: right; margin-left: 15px; }
+.thumbcaption { font-size: 0.8em; }
+
+
 .titleFirstWord {
     color: #CC0000;
 }
