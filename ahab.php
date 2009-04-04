@@ -65,6 +65,16 @@ class AhabTemplate extends QuickTemplate {
 		<title><?php $this->text('pagetitle') ?></title>
 		<style type="text/css" media="screen, projection">/*<![CDATA[*/
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
+<?php
+/* This code sucks. Is there some other way to ask a page what categories it is in?
+   I don't see it. */
+$categorylinks = $this->data['catlinks'];
+if (strpos($categorylinks, 'Landing_page') !== false) {
+    /* do nothing */
+} else { ?>
+			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened_page.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
+<?php } ?>
+
 		/*]]>*/</style>
 		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('printcss') ?>?<?php echo $GLOBALS['wgStyleVersion'] ?>" />
 		<meta http-equiv="imagetoolbar" content="no" />
