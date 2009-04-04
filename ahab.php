@@ -461,7 +461,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 ?>
 			</div>
 			<div id="content">
-					<?php include 'from_whitewhale/content.slider.php'; ?>
+					<?php include '/tmp/rofl'; ?>
 			</div>
 			<?php $this->copyleft(); ?>
 		</div>
