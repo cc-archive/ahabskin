@@ -186,10 +186,33 @@ class AhabTemplate extends QuickTemplate {
 <!-- image panel -->
 
 			<div class="panel with_image">
-				<h2 class="purple">Projects</h2>
-				<img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/homepage/strip/cambodia.jpg" alt="Faculty of a Cambodian public school" width="240" height="140"/>
-				<h3>Open Education in Cambodia</h3>
-				<p>Cambodia has become the first country in the world to teach only Free and Open Source application in its public schools. <a class="more_link" href="#">More &raquo;</a></p>
+			    <?php echo "<!-- I want to use $chosen_sidebox ";
+		$title = Title::newFromText($chosen_sidebox);
+		print_r($title);
+		global $wgParser;
+		global $wgUser;
+		$wgParser->startExternalParse( $title, new ParserOptions(), OT_HTML);
+		$articleObj = new Article($title);
+		// Try the parser cache first
+		$pcache = ParserCache::singleton();
+		$p_result = $pcache->get($articleObj, $wgUser);
+		if(!$p_result)
+		  {
+		    $p_result = $wgParser->parse($articleObj->getContent(), $titleObj, $popts);
+		    global $wgUseParserCache;
+		    if($wgUseParserCache)
+		      $pcache->save($p_result, $articleObj, $popts);
+		  }
+
+		//print_r($p_result);
+		echo '-->';
+
+		$rendered_text = $p_result->mText;
+		# evil evil hackery
+		$fixed_text = str_replace('class="mw-headline"', '', $rendered_text);
+		print($fixed_text);
+ ?>
+
 			</div> <!-- end image panel -->
 
 <?php $this->copyleft(); ?>
