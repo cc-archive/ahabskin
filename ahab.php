@@ -196,7 +196,6 @@ class AhabTemplate extends QuickTemplate {
 
 <!-- image panel -->
 
-			<div class="panel with_image">
 			    <?php
 		$title = Title::newFromText($chosen_sidebox);
 		global $wgParser;
@@ -217,6 +216,11 @@ class AhabTemplate extends QuickTemplate {
 		$rendered_text = $p_result->mText;
 		# evil evil hackery
 		$fixed_text = str_replace('class="mw-headline"', '', $rendered_text);
+		if (substr_count($fixed_text, '<img') > 0) {
+		  ?><div class="panel with_image">
+		    <?php } else {
+		  ?><div class="panel">
+		       <?php }
 		print($fixed_text);
  ?>
 
