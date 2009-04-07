@@ -197,7 +197,7 @@ class AhabTemplate extends QuickTemplate {
 		$p_result = $pcache->get($articleObj, $wgUser);
 		if(!$p_result)
 		  {
-		    $p_result = $wgParser->parse($articleObj->getContent(), $titleObj, $popts);
+		    $p_result = $wgParser->parse($articleObj->getContent(), $title, new ParserOptions());
 		    global $wgUseParserCache;
 		    if($wgUseParserCache)
 		      $pcache->save($p_result, $articleObj, $popts);
