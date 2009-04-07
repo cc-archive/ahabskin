@@ -186,9 +186,8 @@ class AhabTemplate extends QuickTemplate {
 <!-- image panel -->
 
 			<div class="panel with_image">
-			    <?php echo "<!-- I want to use $chosen_sidebox ";
+			    <?php
 		$title = Title::newFromText($chosen_sidebox);
-		print_r($title);
 		global $wgParser;
 		global $wgUser;
 		$wgParser->startExternalParse( $title, new ParserOptions(), OT_HTML);
@@ -205,7 +204,6 @@ class AhabTemplate extends QuickTemplate {
 		  }
 
 		//print_r($p_result);
-		echo '-->';
 
 		$rendered_text = $p_result->mText;
 		# evil evil hackery
