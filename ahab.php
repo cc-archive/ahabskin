@@ -51,6 +51,12 @@ class AhabTemplate extends QuickTemplate {
 		$this->skin = $skin = $this->data['skin'];
 		/* Detect if we are in the landing page category */
 		$in_landing_page = (bool) (strpos($this->data['catlinks'], 'Landing_page'));
+		/* If we are, oh boy... */
+		if ($in_landing_page) {
+		  /* create a SMW Page */
+		  $smw_page = SMWWikiPageValue::makePageFromTitle($this->skin->mTitle);
+		}
+
 		$action = $wgRequest->getText( 'action' );
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
