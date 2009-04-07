@@ -55,6 +55,30 @@ class AhabTemplate extends QuickTemplate {
 		if ($in_landing_page) {
 		  /* create a SMW Page */
 		  $smw_page = SMWWikiPageValue::makePageFromTitle($this->skin->mTitle);
+
+		  /* Create a Property for Preferred_sidebox */
+		  $property = SMWPropertyValue::makeUserProperty('Preferred sidebox');
+		  
+		  /* Gank the current SMW data store... */
+		  $store = &smwfGetStore();
+
+		  /* ...and ask it if this page has a sidebox preference. */
+		  $preferences = $store->getPropertyValues($smw_page, $property);
+
+		  /* if the count is >=1, grab the first one. */
+		  if (count($preferences) > 0) {
+		    $chosen_sidebox = $preferences[0]->getShortText(SMW_OUTPUT_HTML);
+		  } else {
+		    /* we ought to pick a random one */
+		    /* FIXME: Actually make this random */
+		    $chosen_sidebox = 'whatever sidebox';
+		  }
+		  
+		  echo '<!-- ';
+		  print('Chosen sidebox is: ' . $chosen_sidebox);
+		  echo '-->';
+		  
+		  
 		}
 
 		$action = $wgRequest->getText( 'action' );
