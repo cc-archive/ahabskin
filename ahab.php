@@ -75,11 +75,27 @@ class AhabTemplate extends QuickTemplate {
 		}
 
 		if ($chosen_sidebox === null) {
-		    /* we ought to pick a random one */
-		    /* FIXME: Actually make this random */
-		    $chosen_sidebox = 'FAQ sidebox';
+		  /* we ought to pick a random one */
+		  $catview = new CategoryViewer(Title::newFromText('Category:Sidebox'));
+		  /* FIXME: Currently this ignores the disabled/enabled property */
+		  $catview->doCategoryQuery();
+		  /* The ->article property on $catview gives us generated HTML, and 
+		   * there is no way to avoid this; the HTMLification happens inside
+		   * the CategoryViewer object.
+		   * 
+		   * FIXME: Replace this with an SMW query (which will have its own problems).
+		   */
+		  function catlink2catstring($catlink) {
+		    return preg_replace('/.*title="(.*?)".*/', '$1', $catlink);
+		  }
+		  $articles = array();
+		  foreach ($catview->articles as $catviewed) {
+		    $articles[] = catlink2catstring($catviewed);
+		  }
+
+		  $random_index = mt_rand(0, count($articles) - 1);
+		  $chosen_sidebox = $articles[$random_index];
 		}
-		
 		
 		echo '<!-- ';
 		print('Chosen sidebox is: ' . $chosen_sidebox);
