@@ -49,6 +49,9 @@ class AhabTemplate extends QuickTemplate {
 	function execute() {
 		global $wgRequest;
 		$this->skin = $skin = $this->data['skin'];
+
+		$chosen_sidebox = null;
+
 		/* Detect if we are in the landing page category */
 		$in_landing_page = (bool) (strpos($this->data['catlinks'], 'Landing_page'));
 		/* If we are, oh boy... */
@@ -68,19 +71,21 @@ class AhabTemplate extends QuickTemplate {
 		  /* if the count is >=1, grab the first one. */
 		  if (count($preferences) > 0) {
 		    $chosen_sidebox = $preferences[0]->getShortText(SMW_OUTPUT_HTML);
-		  } else {
+		  }
+		}
+
+		if ($chosen_sidebox === null) {
 		    /* we ought to pick a random one */
 		    /* FIXME: Actually make this random */
 		    $chosen_sidebox = 'FAQ sidebox';
-		  }
-		  
-		  echo '<!-- ';
-		  print('Chosen sidebox is: ' . $chosen_sidebox);
-		  echo '-->';
-		  
-		  
 		}
-
+		
+		
+		echo '<!-- ';
+		print('Chosen sidebox is: ' . $chosen_sidebox);
+		echo '-->';
+		  
+		  
 		$action = $wgRequest->getText( 'action' );
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
