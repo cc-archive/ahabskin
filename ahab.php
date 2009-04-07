@@ -97,11 +97,6 @@ class AhabTemplate extends QuickTemplate {
 		  $chosen_sidebox = $articles[$random_index];
 		}
 		
-		echo '<!-- ';
-		print('Chosen sidebox is: ' . $chosen_sidebox);
-		echo '-->';
-		  
-		  
 		$action = $wgRequest->getText( 'action' );
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
