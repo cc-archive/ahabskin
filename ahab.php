@@ -71,7 +71,7 @@ class AhabTemplate extends QuickTemplate {
 		  } else {
 		    /* we ought to pick a random one */
 		    /* FIXME: Actually make this random */
-		    $chosen_sidebox = 'whatever sidebox';
+		    $chosen_sidebox = 'FAQ sidebox';
 		  }
 		  
 		  echo '<!-- ';
