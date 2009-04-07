@@ -219,8 +219,6 @@ class AhabTemplate extends QuickTemplate {
 		      $pcache->save($p_result, $articleObj, $popts);
 		  }
 
-		//print_r($p_result);
-
 		$rendered_text = $p_result->mText;
 		# evil evil hackery
 		$fixed_text = str_replace('class="mw-headline"', '', $rendered_text);
