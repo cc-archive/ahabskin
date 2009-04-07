@@ -49,6 +49,8 @@ class AhabTemplate extends QuickTemplate {
 	function execute() {
 		global $wgRequest;
 		$this->skin = $skin = $this->data['skin'];
+		/* Detect if we are in the landing page category */
+		$in_landing_page = (bool) (strpos($this->data['catlinks'], 'Landing_page'));
 		$action = $wgRequest->getText( 'action' );
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
@@ -68,10 +70,7 @@ class AhabTemplate extends QuickTemplate {
 <?php
 /* This code sucks. Is there some other way to ask a page what categories it is in?
    I don't see it. */
-$categorylinks = $this->data['catlinks'];
-if (strpos($categorylinks, 'Landing_page') !== false) {
-    /* do nothing */
-} else { ?>
+    if (! $in_landing_page) { ?>
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened_page.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 <?php } ?>
 
