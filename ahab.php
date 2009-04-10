@@ -541,7 +541,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 ?>
 			</div>
 			<div id="content">
-					<?php include '/var/tmp/opened-frontpage-sideboxes.html'; ?>
+					<?php include '/var/www/opened.creativecommons.org/volatile/opened-frontpage-sideboxes.html'; ?>
 			</div>
 			<?php $this->copyleft(); ?>
 		</div>
