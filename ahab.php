@@ -266,11 +266,15 @@ class AhabTemplate extends QuickTemplate {
 
 	function footer() {
 ?>
-	<ul id="footer">
-		<li id="home"><a href="http://learn.creativecommons.org/">Hosted by ccLearn</a></li>
-		<li id="contact"><a href="http://learn.creativecommons.org/contact">Contact us</a></li>
-	</ul>
-	    <?php }
+	  <ul id="footer">
+	    <li id="home"><a href="http://learn.creativecommons.org/">Hosted by ccLearn</a></li>
+	    <li id="contact">
+	    <a href="http://learn.creativecommons.org/tou">Terms of use</a> | 
+	    <a href="http://creativecommons.org/privacy">Privacy policy</a> |
+	    <a href="http://learn.creativecommons.org/contact">Contact us</a>
+	    </li>
+	    </ul>
+	      <?php }
 
 	function topbox() {
 ?>
