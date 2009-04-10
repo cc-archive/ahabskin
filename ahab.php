@@ -77,19 +77,23 @@ class AhabTemplate extends QuickTemplate {
 		
 		if ($chosen_sidebox === null) {
 			/* we ought to pick a random one */
+		        /* Whip up a query: String first, then object */
 			$query_s = '[[Category:Sidebox]] [[Enabled::True]]';
 			$query = SMWQueryProcessor::createQuery($query_s, array());
+			/* Perform the query */
 			$res = smwfGetStore()->getQueryResult($query);
-			$ra = array();
+			/* Initialize an array to store the candidate Title objects in */
+			$candidate_titles = array();
+			/* Start the iteration */
 			$resarray = $res->getNext();
 			while ($resarray !== false) {
 				$instance = end($resarray)->getNextObject();
-				$ra[] = $instance->getTitle();
+				$candidate_titles[] = $instance->getTitle();
 				$resarray = $res->getNext();
 			}
-			
-			$random_index = mt_rand(0, count($ra) - 1);
-			$chosen_sidebox = $ra[$random_index];
+			/* Pick a random one */
+			$random_index = mt_rand(0, count($candidate_titles) - 1);
+			$chosen_sidebox = $candidate_titles[$random_index];
 		}
 		
 		$action = $wgRequest->getText( 'action' );
