@@ -73,28 +73,22 @@ class AhabTemplate extends QuickTemplate {
 		    $chosen_sidebox = $preferences[0]->getShortText(SMW_OUTPUT_HTML);
 		  }
 		}
-
+		
 		if ($chosen_sidebox === null) {
-		  /* we ought to pick a random one */
-		  $catview = new CategoryViewer(Title::newFromText('Category:Sidebox'));
-		  /* FIXME: Currently this ignores the disabled/enabled property */
-		  $catview->doCategoryQuery();
-		  /* The ->article property on $catview gives us generated HTML, and 
-		   * there is no way to avoid this; the HTMLification happens inside
-		   * the CategoryViewer object.
-		   * 
-		   * FIXME: Replace this with an SMW query (which will have its own problems).
-		   */
-		  function catlink2catstring($catlink) {
-		    return preg_replace('/.*title="(.*?)".*/', '$1', $catlink);
-		  }
-		  $articles = array();
-		  foreach ($catview->articles as $catviewed) {
-		    $articles[] = catlink2catstring($catviewed);
-		  }
-
-		  $random_index = mt_rand(0, count($articles) - 1);
-		  $chosen_sidebox = $articles[$random_index];
+			/* we ought to pick a random one */
+			$query_s = '[[Category:Sidebox]] [[Enabled::True]]';
+			$query = SMWQueryProcessor::createQuery($query_s, array());
+			$res = smwfGetStore()->getQueryResult($query);
+			$ra = array();
+			$resarray = $res->getNext();
+			while ($resarray !== false) {
+				$instance = end($resarray)->getNextObject();
+				$ra[] = $instance->getTitle();
+				$resarray = $res->getNext();
+			}
+			
+			$random_index = mt_rand(0, count($ra) - 1);
+			$chosen_sidebox = $ra[$random_index];
 		}
 		
 		$action = $wgRequest->getText( 'action' );
@@ -197,7 +191,7 @@ class AhabTemplate extends QuickTemplate {
 <!-- image panel -->
 
 			    <?php
-		$title = Title::newFromText($chosen_sidebox);
+		$title = $chosen_sidebox;
 		global $wgParser;
 		global $wgUser;
 		$wgParser->startExternalParse( $title, new ParserOptions(), OT_HTML);
