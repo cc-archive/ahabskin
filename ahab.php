@@ -70,7 +70,8 @@ class AhabTemplate extends QuickTemplate {
 
 		  /* if the count is >=1, grab the first one. */
 		  if (count($preferences) > 0) {
-		    $chosen_sidebox = $preferences[0]->getShortText(SMW_OUTPUT_HTML);
+		      $chosen_sidebox = Title::newFromText($preferences[0]
+							   ->getShortText(SMW_OUTPUT_HTML));
 		  }
 		}
 		
@@ -191,17 +192,16 @@ class AhabTemplate extends QuickTemplate {
 <!-- image panel -->
 
 			    <?php
-		$title = $chosen_sidebox;
 		global $wgParser;
 		global $wgUser;
-		$wgParser->startExternalParse( $title, new ParserOptions(), OT_HTML);
-		$articleObj = new Article($title);
+		$wgParser->startExternalParse( $chosen_sidebox, new ParserOptions(), OT_HTML);
+		$articleObj = new Article($chosen_sidebox);
 		// Try the parser cache first
 		$pcache = ParserCache::singleton();
 		$p_result = $pcache->get($articleObj, $wgUser);
 		if(!$p_result)
 		  {
-		    $p_result = $wgParser->parse($articleObj->getContent(), $title, new ParserOptions());
+		    $p_result = $wgParser->parse($articleObj->getContent(), $chosen_sidebox, new ParserOptions());
 		    global $wgUseParserCache;
 		    if($wgUseParserCache)
 		      $pcache->save($p_result, $articleObj, $popts);
