@@ -411,8 +411,20 @@ class AhabTemplate extends QuickTemplate {
 ?>			<div id="copyleft">
 				<a href="http://learn.creativecommons.org" id="cclearn"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/cclearn_logo.gif" alt="ccLearn" width="92" height="23"/></a>
 				<div id="license">
-					 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"<img src="http://i.creativecommons.org/l/by/3.0/us/88x31.png" alt="Creative Commons BY License" width="88" height="31"/></a>
-					<p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">
+                    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/us/88x31.png" /></a>
+
+<p>
+Except where otherwise noted, content on this site available
+under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
+
+<!-- Futher permissions
+<a xmlns:cc="http://creativecommons.org/ns#" href="http://learn.creativecommons.org/contact" rel="cc:morePermissions">
+may be available</a>. -->
+Attribute to <a xmlns:cc="http://creativecommons.org/ns#" href="http://learn.creativecommons.org" property="cc:attributionName" rel="cc:attributionURL">ccLearn</a>.
+
+</p>
+
 				</div>
 			</div>
 
