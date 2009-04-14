@@ -418,10 +418,7 @@ class AhabTemplate extends QuickTemplate {
 <p>
 Except where otherwise noted, content on this site available
 under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
-
-Attribute to <a xmlns:cc="http://creativecommons.org/ns#" href="http://learn.creativecommons.org" property="cc:attributionName" rel="cc:attributionURL">ccLearn</a>.
-<a xmlns:cc="http://creativecommons.org/ns#" href="http://learn.creativecommons.org/contact" rel="cc:morePermissions">Further permissions</a>.
-
+Attribute to <a xmlns:cc="http://creativecommons.org/ns#" href="http://opened.creativecommons.org/" property="cc:attributionName" rel="cc:attributionURL">OpenEd</a>.
 </p>
 
 				</div>
