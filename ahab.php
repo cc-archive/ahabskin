@@ -154,6 +154,7 @@ class AhabTemplate extends QuickTemplate {
 
 <div id="container">
    <?php $this->topbox(); ?>
+	<div id="betaBox">&nbsp;</div>
 	<div id="frame">
 
 
@@ -530,6 +531,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 <div id="clip">
 	<div id="container">
 			   <?php $this->topbox(); ?>
+		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="157"/></a></h1>
