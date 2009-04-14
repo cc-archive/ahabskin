@@ -50,6 +50,19 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 	
 #content { float:left; width:663px; padding:72px 30px 30px 30px; margin-left:-1px; border-left:1px solid #ccc; }
 
+#toc {
+	background-color: #f3f3f3;
+	float: right;
+	font-size: 90%;
+	margin: 0 0 50px 15px;
+	padding: 0 5px;
+	width: 200px;
+}
+
+#toc #toctitle h2 {
+	font-size: 2em;
+}
+
 #footer { font-size:0.9em; list-style-type: none; }
 	#footer #home { float:left; }
 		#footer #home span { font-style:italic; }
