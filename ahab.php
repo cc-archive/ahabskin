@@ -113,6 +113,7 @@ class AhabTemplate extends QuickTemplate {
         <script type="<?php $this->text('jsmimetype')?>" src="<?php $this->text('stylepath') ?>/ahab/js_css.js"></script>
 		<style type="text/css" media="screen, projection">/*<![CDATA[*/
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
+			@import "<?php $this->text('stylepath') ?>/ahab/from_wikipedia/navframe.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 <?php
 /* This code sucks. Is there some other way to ask a page what categories it is in?
    I don't see it. */
@@ -127,6 +128,8 @@ class AhabTemplate extends QuickTemplate {
 		<?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
                 
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
+        <script type="<?php $this->text('jsmimetype')?>" src="<?php $this->text('stylepath') ?>/ahab/from_wikipedia/navframe.js"></script>
+
 
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
 		<!-- Head Scripts -->
