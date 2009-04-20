@@ -1,5 +1,6 @@
 /* 
  * More GFDL code - this from http://en.wikipedia.org/wiki/Wikipedia_talk:NavFrame
+ * COPYING in the same directory as this file is the GFDL text.
  */
  /* Test if an element has a certain class **************************************
   *
