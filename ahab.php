@@ -110,6 +110,7 @@ class AhabTemplate extends QuickTemplate {
 		<meta http-equiv="Content-Type" content="<?php $this->text('mimetype') ?>; charset=<?php $this->text('charset') ?>" />
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
+        <script type="<?php $this->text('jsmimetype')?>" src="<?php $this->text('stylepath') ?>/ahab/js_css.js"></script>
 		<style type="text/css" media="screen, projection">/*<![CDATA[*/
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/opened.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 <?php
@@ -164,7 +165,7 @@ class AhabTemplate extends QuickTemplate {
 			<div id="header">
 				<h1><a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
 				<form id="searchbox" action="<?php $this->text('searchaction') ?>" method="get">
-					<label for="searchbox_query" id="searchbox_title">Search Open Ed</label>
+					<span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
 					<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
 					<ul id="searchbox_sources">
 						<li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
