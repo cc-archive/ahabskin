@@ -157,7 +157,7 @@ p#intro:first-line {color:#000;}
 .second.column {margin-top:40px;}
 
 .printfooter {
-	display: block;
+	display: none;
 	clear: both;
 	color: #888;
 	font-size: 90%;
