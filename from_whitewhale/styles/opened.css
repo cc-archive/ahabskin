@@ -202,3 +202,10 @@ p#intro:first-line {color:#000;}
     font-size: 60%;
     float: right;
 }
+
+/* Semantic Forms checkbox formatting "fix" */
+span.checkboxSpan {
+    width: 150px;
+    display: block;
+    float: left;
+}
