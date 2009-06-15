@@ -208,4 +208,5 @@ span.checkboxSpan {
     width: 150px;
     display: block;
     float: left;
+    white-space: normal;	
 }
