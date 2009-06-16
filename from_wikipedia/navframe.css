@@ -24,9 +24,9 @@ div.NavPic {
     float: left;
 }
 div.NavFrame div.NavHead {
-    height: 1.6em;
+    height: 1.3em;
     font-weight: bold;
-    background-color: #ccf;
+    background-color: #FFAAAA;
     position: relative;
 }
 div.NavFrame p {
