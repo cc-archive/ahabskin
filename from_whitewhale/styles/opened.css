@@ -205,7 +205,7 @@ p#intro:first-line {color:#000;}
 
 /* Semantic Forms checkbox formatting "fix" */
 span.checkboxSpan {
-    width: 150px;
+    width: 100%;
     display: block;
     float: left;
     white-space: normal;	
