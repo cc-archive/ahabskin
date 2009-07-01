@@ -210,3 +210,7 @@ span.checkboxSpan {
     float: left;
     white-space: normal;	
 }
+
+textarea.createboxInput {
+    width: 40ex;
+}
