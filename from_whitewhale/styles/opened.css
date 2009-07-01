@@ -211,6 +211,6 @@ span.checkboxSpan {
     white-space: normal;	
 }
 
-textarea.createboxInput {
-    width: 40ex;
+textarea.createboxInput.inform {
+    width: 65ex;
 }
