@@ -4,7 +4,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Open Ed at Creative Commons: For Learners</title>
 	<link href="/styles/opened.css" rel="stylesheet"/>
-	<script type="text/javascript" src="/scripts/beforeload.js"></script>
+<!--	<script type="text/javascript" src="/scripts/beforeload.js"></script>-->
 </head>
 <body>
 <a href="#content" class="skiplink">Skip to content</a>
