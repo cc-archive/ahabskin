@@ -19,7 +19,7 @@ input[disabled],select[disabled],textarea[disabled],button[disabled] { opacity:0
 /* Page structure */
 body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica,sans-serif; font-size:0.875em; line-height:1.3; }
 #container { position: relative; width:968px; margin:0 auto; }
-#frame { position:relative; border:1px solid #ccc; margin:0 0 0.3em 0; background:url(../images/common/bg_cclearn_mark.gif) no-repeat 480px -20px; }
+#frame { position:relative; border:1px solid #ccc; margin:0 0 0.3em 0; background:url(../images/common/bg_oer_mark.gif) no-repeat 480px -20px; }
 
 #betaBox {
 	position: absolute;
