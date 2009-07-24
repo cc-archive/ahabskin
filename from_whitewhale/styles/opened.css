@@ -23,8 +23,8 @@ body { background-color:#fff; color:#333; font-family:"Helvetica Neue",Helvetica
 
 #betaBox {
 	position: absolute;
-	top: 0;
-	left: 15px;
+	top: 47px;
+	left: 0px;
 	width: 100px;
 	height: 30px;
 	border: 1px solid #fff;
