@@ -13,7 +13,7 @@
 	<div id="container">
 		<div id="frame">
 			<div id="header">
-				<h1><a href="/"><img src="images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
+				<h1><a href="/"><img src="images/common/opened_logo_tagline_an.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="173"/></a></h1>
 				<form id="search" action="/search/" method="get">
 					<label for="search_query" id="search_title">Search Open Ed</label>
 					<input name="q" id="search_query" type="text"/><input type="submit" id="search_submit" value="Go"/>
