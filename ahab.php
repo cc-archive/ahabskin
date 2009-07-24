@@ -131,7 +131,7 @@ class AhabTemplate extends QuickTemplate {
         <script type="<?php $this->text('jsmimetype')?>" src="<?php $this->text('stylepath') ?>/ahab/from_wikipedia/navframe.js"></script>
 
 
-		<!-- <script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script> -->
+		<!-- <script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"> wikibits js </script> -->
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
 <?php	if($this->data['jsvarurl']) { ?>
@@ -161,13 +161,12 @@ class AhabTemplate extends QuickTemplate {
 	<div id="betaBox">&nbsp;</div>
 	<div id="frame">
 
-
 		<div id="sidebar">
    <!-- sidebar -->
    <!-- header -->
 			<div id="header">
 				<h1><a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo.gif" alt="Open Ed" width="210" height="113"/></a></h1>
-				<form id="searchbox" action="<?php $this->text('searchaction') ?>" method="get">
+				<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
 					<span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
 					<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
 					<ul id="searchbox_sources">
@@ -233,8 +232,11 @@ class AhabTemplate extends QuickTemplate {
 		</div> <!-- end sidebar -->
 
 <!-- content -->
-
-		<div id="content">
+		<div id="content" style="position: relative;">
+			<div id="googleTranslate" style="position: absolute; top: 0; left: 0;">
+				<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=en&w=160&h=60&title=&border=&output=js"></script>
+			</div>
+			<div>&nbsp;</div>
 		    <h1 class="firstHeading"><?php $this->formattedTitle(); ?></h1>
 
 		 <?php $this->html('bodytext') ?>
@@ -527,7 +529,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			@import "<?php $this->text('stylepath') ?>/ahab/from_whitewhale/styles/homepage.css?<?php echo $GLOBALS['wgStyleVersion'] ?>";
 		/*]]>*/</style>
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
-		<!-- <script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script> -->
+		<!-- <script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/ahab/beforeload.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"> wikibits js </script> -->
 </head>
 <body>
 <a href="#content" class="skiplink">Skip to content</a>
@@ -536,6 +538,9 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			   <?php $this->topbox(); ?>
 		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
+			<div id="googleTranslate" style="position: absolute; right: 0;">
+				<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=en&w=160&h=60&title=&border=&output=js"></script>
+			</div>
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="157"/></a></h1>
 <?php
