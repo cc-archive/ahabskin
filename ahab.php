@@ -568,7 +568,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
 			   <?php $this->topbox(); ?>
 		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
-			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5;">
+			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5px;">
 <!-- Google Translate Options -->
 
 <div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
