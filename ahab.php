@@ -569,12 +569,12 @@ class AhabFrontPageTemplate extends AhabTemplate {
 		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
 			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5;">
-				<!-- Google Translate Options -->
+<!-- Google Translate Options -->
 
 <div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
 
 <!--Arabic-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ar">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© </a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ar">العربية </a><br /><br />
 <!--End Arabic-->
 
 <!-- Deutsch-->
@@ -584,53 +584,56 @@ class AhabFrontPageTemplate extends AhabTemplate {
 
 <!-- Add English to Spanish -->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|es">EspaÃ±ol</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|es">Español</a><br /><br />
 <!-- END English to Spanish -->
 
 <!-- Add English to French -->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|fr">FranÃ§ais</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|fr">Français</a><br /><br />
 
 <!-- END English to French -->
 
 <!--Hindi-->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|hi">à¤¹à¤¿à¤¨à¥à¤¦à¥€</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|hi">हिन्दी</a><br /><br />
 
 <!--End Hindi-->
 
 <!-- Japanese-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ja">æ—¥æœ¬èªž</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ja">日本語</a><br /><br />
 
 <!-- END Japanese -->
 
 <!--Korean-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ko">í•œêµ­ì–´</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ko">한국어</a><br /><br />
 
 <!-- END KOREAN-->
 
 <!-- Add English to Portuguese -->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|pt">PortuguÃªs</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|pt">Português</a><br /><br />
 
 <!-- END English to Portuguese -->
 
 <!--  Russian -->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ru">Ð ÑƒÑÑÐºÐ¸Ð¹</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ru">Русский</a><br /><br />
 
 <!-- END Russian -->
 
 
 
 <!-- Add English to Chinese (Simplified) -->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|zh-TW">ä¸­æ–‡</a><br /><br />
+<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|zh-TW">中文</a><br /><br />
 
 <!-- END English to Chinese (Simplified)-->
 
 
 <a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/OpenEd_in_Your_Language">More>></a>
 </div>
+
+
+
 
 
 
