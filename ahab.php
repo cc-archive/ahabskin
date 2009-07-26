@@ -233,7 +233,7 @@ class AhabTemplate extends QuickTemplate {
 
 <!-- content -->
 		<div id="content" style="position: relative;">
-			<div id="googleTranslate" style="position: absolute; top: 0; left: 0;">
+			<div id="googleTranslate" style="position: absolute; top: 0; left: 0; margin: 5px;">
 				<!-- Google Translate Options -->
 
 <div id="languages" align="left" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
