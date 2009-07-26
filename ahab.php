@@ -234,7 +234,36 @@ class AhabTemplate extends QuickTemplate {
 <!-- content -->
 		<div id="content" style="position: relative;">
 			<div id="googleTranslate" style="position: absolute; top: 0; left: 0;">
-				<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=en&w=160&h=60&title=&border=&output=js"></script>
+				<!-- Google Translate Options -->
+
+<div id="languages" align="left" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
+
+<!-- Add English to Chinese (Simplified) -->
+<a style="color: #cc0000; text-decoration: underline;" target="_blank" rel="nofollow" onclick="window.open('http://www.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=en%7Czh-CN&hl=en&ie=UTF8'); return false;" title="Google-Translate-Chinese (Simplified)">中文</a>&nbsp;&nbsp;
+
+<!-- END English to Chinese (Simplified)-->
+
+<!-- Add English to Spanish -->
+
+<a style="color: #cc0000; text-decoration: underline;" target="_blank" rel="nofollow" onclick="window.open('http://www.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=en%7Ces&hl=en&ie=UTF8'); return false;" title="Google-Translate-English to Spanish ">Español</a>&nbsp;&nbsp;
+
+<!-- END English to Spanish -->
+
+<!-- Add English to French -->
+
+<a style="color: #cc0000; text-decoration: underline;" target="_blank" rel="nofollow" onclick="window.open('http://www.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=en%7Cfr&hl=en&ie=UTF8'); return false;" title="Google-Translate-English to French ">Français</a>&nbsp;&nbsp;
+
+<!-- END English to French -->
+<br />
+<!-- Add English to Portuguese -->
+
+<a style="color: #cc0000; text-decoration: underline;"target="_blank" rel="nofollow" onclick="window.open('http://www.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=en%7Cpt&hl=en&ie=UTF8'); return false;" title="Google-Translate-English to Portuguese ">Português</a>&nbsp;&nbsp;
+
+<!-- END English to Portuguese -->
+
+<a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/Other_Languages">Other Languages</a>
+</div>
+
 			</div>
 			<div>&nbsp;</div>
 		    <h1 class="firstHeading"><?php $this->formattedTitle(); ?></h1>
