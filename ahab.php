@@ -579,8 +579,7 @@ class AhabFrontPageTemplate extends AhabTemplate {
                                         </ul>
                                 </form>
 
-
-			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5px;">
+			<div id="googleTranslate" style="position: absolute; right: 0; top: 60px; margin: 5px;">
 				<!-- Google Translate Options -->
 				<div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
 				<!--Arabic-->
@@ -604,9 +603,6 @@ class AhabFrontPageTemplate extends AhabTemplate {
 				<!--Korean-->
 				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ko">한국어</a><br /><br />
 				<!-- END KOREAN-->
-				<!-- Add English to Portuguese -->
-				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|pt">Português</a><br /><br />
-				<!-- END English to Portuguese -->
 				<!--  Russian -->
 				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ru">Русский</a><br /><br />
 				<!-- END Russian -->
