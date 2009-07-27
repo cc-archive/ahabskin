@@ -566,8 +566,8 @@ class AhabFrontPageTemplate extends AhabTemplate {
 	<div id="container">
 
 			   <?php $this->topbox(); ?>
-		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
+		<div id="betaBox">&nbsp;</div>
 			<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
 			<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
                                         <ul id="searchbox_sources">
