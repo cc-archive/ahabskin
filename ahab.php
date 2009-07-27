@@ -158,9 +158,8 @@ class AhabTemplate extends QuickTemplate {
 
 <div id="container">
    <?php $this->topbox(); ?>
-	<div id="betaBox">&nbsp;</div>
 	<div id="frame">
-
+	<div id="betaBox">&nbsp;</div>
 		<div id="sidebar">
    <!-- sidebar -->
    <!-- header -->
