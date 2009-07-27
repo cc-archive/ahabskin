@@ -570,7 +570,6 @@ class AhabFrontPageTemplate extends AhabTemplate {
 		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
 			<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
-			<span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
 			<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
                                         <ul id="searchbox_sources">
                                                 <li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
