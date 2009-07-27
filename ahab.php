@@ -261,7 +261,7 @@ class AhabTemplate extends QuickTemplate {
 
 <!-- END English to Portuguese -->
 
-<a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/Other_Languages">Other Languages</a>
+<a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/OpenEd_in_Your_Language">Other Languages</a>
 </div>
 
 			</div>
