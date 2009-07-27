@@ -566,16 +566,17 @@ class AhabFrontPageTemplate extends AhabTemplate {
 <div id="clip">
 	<div id="container">
 
-		 <form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
+					<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
                                         <span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
-                                        <input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $th$
+                                        <input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
                                         <ul id="searchbox_sources">
                                                 <li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
                                                 <li><input type="checkbox" id="searchbox_odepo" checked="checked"/><label for="searchbox_odepo">Organizations (ODEPO)</label></li>
-                                                <li><input type="checkbox" id="searchbox_community" checked="checked"/><label for="searchbox_community">Community resources</label>$
+                                                <li><input type="checkbox" id="searchbox_community" checked="checked"/><label for="searchbox_community">Community resources</label></li>
                                                 <li><input type="checkbox" id="searchbox_site" checked="checked"/><label for="searchbox_site">This site</label></li>
                                         </ul>
-                </form>
+                                </form>
+
 
 			   <?php $this->topbox(); ?>
 		<div id="betaBox">&nbsp;</div>
