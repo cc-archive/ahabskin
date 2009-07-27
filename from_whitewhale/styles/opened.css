@@ -215,3 +215,7 @@ span.checkboxSpan {
 textarea.createboxInput.inform {
     width: 65ex;
 }
+
+.mw-label {
+vertical-align:top;
+}
