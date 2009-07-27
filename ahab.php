@@ -565,78 +565,56 @@ class AhabFrontPageTemplate extends AhabTemplate {
 <a href="#content" class="skiplink">Skip to content</a>
 <div id="clip">
 	<div id="container">
+
+		 <form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
+                                        <span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
+                                        <input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $th$
+                                        <ul id="searchbox_sources">
+                                                <li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
+                                                <li><input type="checkbox" id="searchbox_odepo" checked="checked"/><label for="searchbox_odepo">Organizations (ODEPO)</label></li>
+                                                <li><input type="checkbox" id="searchbox_community" checked="checked"/><label for="searchbox_community">Community resources</label>$
+                                                <li><input type="checkbox" id="searchbox_site" checked="checked"/><label for="searchbox_site">This site</label></li>
+                                        </ul>
+                </form>
+
 			   <?php $this->topbox(); ?>
 		<div id="betaBox">&nbsp;</div>
 		<div id="frame">
 			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5px;">
-<!-- Google Translate Options -->
-
-<div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
-
-<!--Arabic-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ar">العربية </a><br /><br />
-<!--End Arabic-->
-
-<!-- Deutsch-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|de">Deutsch</a><br /><br />
-
-<!-- End German -->
-
-<!-- Add English to Spanish -->
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|es">Español</a><br /><br />
-<!-- END English to Spanish -->
-
-<!-- Add English to French -->
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|fr">Français</a><br /><br />
-
-<!-- END English to French -->
-
-<!--Hindi-->
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|hi">हिन्दी</a><br /><br />
-
-<!--End Hindi-->
-
-<!-- Japanese-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ja">日本語</a><br /><br />
-
-<!-- END Japanese -->
-
-<!--Korean-->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ko">한국어</a><br /><br />
-
-<!-- END KOREAN-->
-
-<!-- Add English to Portuguese -->
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|pt">Português</a><br /><br />
-
-<!-- END English to Portuguese -->
-
-<!--  Russian -->
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ru">Русский</a><br /><br />
-
-<!-- END Russian -->
-
-
-
-<!-- Add English to Chinese (Simplified) -->
-<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|zh-TW">中文</a><br /><br />
-
-<!-- END English to Chinese (Simplified)-->
-
-
-<a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/OpenEd_in_Your_Language">More>></a>
-</div>
-
-
-
-
-
-
+				<!-- Google Translate Options -->
+				<div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
+				<!--Arabic-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ar">العربية </a><br /><br />
+				<!--End Arabic-->
+				<!-- Deutsch-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|de">Deutsch</a><br /><br />
+				<!-- End German -->
+				<!-- Add English to Spanish -->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|es">Español</a><br /><br />
+				<!-- END English to Spanish -->
+				<!-- Add English to French -->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|fr">Français</a><br /><br />
+				<!-- END English to French -->
+				<!--Hindi-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|hi">हिन्दी</a><br /><br />
+				<!--End Hindi-->
+				<!-- Japanese-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ja">日本語</a><br /><br />
+				<!-- END Japanese -->
+				<!--Korean-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ko">한국어</a><br /><br />
+				<!-- END KOREAN-->
+				<!-- Add English to Portuguese -->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|pt">Português</a><br /><br />
+				<!-- END English to Portuguese -->
+				<!--  Russian -->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|ru">Русский</a><br /><br />
+				<!-- END Russian -->
+				<!-- Add English to Chinese (Simplified) -->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://translate.google.com/translate?client=tmpg&hl=en&u=http%3A%2F%2Fopened.creativecommons.org%2FMain_Page&langpair=en|zh-TW">中文</a><br /><br />
+				<!-- END English to Chinese (Simplified)-->
+				<a style="color: #cc0000; text-decoration: underline;" href="http://opened.creativecommons.org/OpenEd_in_Your_Language">More>></a>
+				</div>
 			</div>
 			<div id="header">
 				<h1><a href="/"><img src="<?php $this->text('stylepath') ?>/ahab/from_whitewhale/images/common/opened_logo_tagline_an.gif" alt="Open Ed: The Open Education Project at Creative Commons" width="214" height="157"/></a></h1>
