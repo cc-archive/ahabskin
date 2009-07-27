@@ -566,9 +566,12 @@ class AhabFrontPageTemplate extends AhabTemplate {
 <div id="clip">
 	<div id="container">
 
-					<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
-                                        <span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
-                                        <input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
+			   <?php $this->topbox(); ?>
+		<div id="betaBox">&nbsp;</div>
+		<div id="frame">
+			<form id="searchbox" style="z-index: 50;" action="<?php $this->text('searchaction') ?>" method="get">
+			<span class="invisible_if_js"><label for="searchbox_query" id="searchbox_title">Search Open Ed</label></span>
+			<input name="search" id="searchInput" type="text"/><input type="submit" name="go" class="searchButton" id="searchGoButton" value="<?php $this->msg('searcharticle') ?>"/>
                                         <ul id="searchbox_sources">
                                                 <li><input type="checkbox" id="searchbox_oer" checked="checked"/><label for="searchbox_oer">Open ed (DiscoverED)</label></li>
                                                 <li><input type="checkbox" id="searchbox_odepo" checked="checked"/><label for="searchbox_odepo">Organizations (ODEPO)</label></li>
@@ -578,9 +581,6 @@ class AhabFrontPageTemplate extends AhabTemplate {
                                 </form>
 
 
-			   <?php $this->topbox(); ?>
-		<div id="betaBox">&nbsp;</div>
-		<div id="frame">
 			<div id="googleTranslate" style="position: absolute; right: 0; margin: 5px;">
 				<!-- Google Translate Options -->
 				<div id="languages" align="right" style="width:auto; cursor:pointer; font: 11px Verdana, sans-serif;">
