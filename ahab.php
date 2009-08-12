@@ -307,6 +307,7 @@ class AhabTemplate extends QuickTemplate {
 	    <a href="http://opened.creativecommons.org/Special:RecentChanges">Recent Changes</a> (<a href="http://opened.creativecommons.org/index.php?title=Special:RecentChanges&feed=rss">RSS</a>) |
 	    <a href="http://creativecommons.org/terms">Terms of use</a> | 
 	    <a href="http://creativecommons.org/privacy">Privacy policy</a> |
+	    <a href="http://creativecommons.org/policies">Policies</a> |
 	    <a href="http://learn.creativecommons.org/contact">Contact us</a>
 	    </li>
 	    </ul>
