@@ -219,3 +219,10 @@ textarea.createboxInput.inform {
 .mw-label {
 vertical-align:top;
 }
+
+#downloadbox a{
+width: 100%;
+height: 100%;
+display: block;
+}
+
