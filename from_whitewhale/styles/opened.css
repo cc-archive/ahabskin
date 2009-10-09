@@ -230,3 +230,7 @@ color: #CC0000;
 #resourceboxred a{
 color: #CC0000;
 }
+
+#resourcebox p {
+margin-bottom: 0px;
+}
